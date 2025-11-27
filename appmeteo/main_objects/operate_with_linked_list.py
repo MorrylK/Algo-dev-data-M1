@@ -1,16 +1,13 @@
-from appmeteo.DataStructure.LinkedList import LinkedList
-from appmeteo.Printing.StationPrinting import StationPrinting
-import json
-import os
+from appmeteo.data_structure.linked_list import LinkedList
+from appmeteo.main_objects.config_data import ConfigData
+from appmeteo.printing.station_printing import StationPrinting
 
-class Operate:
+
+class OperateWithLinkedList:
     def __init__(self) -> None:
         print(f"Nous allons afficher la météo dans quelques stations.")
 
-        config_path = os.path.join(os.path.dirname(__file__), "config.json")
-        with open(config_path, 'r', encoding='utf-8') as f:
-            config = json.load(f)
-
+        config = ConfigData.get()
         station = LinkedList(config['stations']).tete
         while station is not None:
             print("\n[Cliquez sur Entrée pour continuer]\n")

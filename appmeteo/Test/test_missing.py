@@ -1,5 +1,5 @@
-from appmeteo.DataExtractor.RecordExtractor import RecordExtractor
-from appmeteo.Test.Test import Test
+from appmeteo.data_extractor.record_extractor import RecordExtractor
+from appmeteo.test.test import Test
 import pandas as pd
 
 

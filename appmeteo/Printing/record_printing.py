@@ -1,7 +1,7 @@
 
 
-from appmeteo.Printing.IPrinting import IPrinting
-from appmeteo.MainObjects.Record import Record
+from appmeteo.printing.iprinting import IPrinting
+from appmeteo.main_objects.record import Record
 
 
 class RecordPrinting(IPrinting):

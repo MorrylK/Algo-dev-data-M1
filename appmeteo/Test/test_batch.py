@@ -1,5 +1,5 @@
-from appmeteo.Test.Test import Test
-from appmeteo.Test.TestMissing import TestMissing
+from appmeteo.test.test import Test
+from appmeteo.test.test_missing import TestMissing
 
 
 class TestBatch(Test):

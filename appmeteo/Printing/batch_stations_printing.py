@@ -1,9 +1,9 @@
 
 
-from appmeteo.Printing.IPrinting import IPrinting
-from appmeteo.Printing.StationPrinting import StationPrinting
-from appmeteo.MainObjects.Record import Record
-from appmeteo.MainObjects.Station import Station
+from appmeteo.printing.iprinting import IPrinting
+from appmeteo.printing.station_printing import StationPrinting
+from appmeteo.main_objects.record import Record
+from appmeteo.main_objects.station import Station
 
 
 class BatchStationsPrinting(IPrinting):

@@ -1,5 +1,5 @@
-from appmeteo.DataStructure.DataStructure import DataStructure
-from appmeteo.DataStructure.LinkedStation import LinkedStation
+from appmeteo.data_structure.datatructure import DataStructure
+from appmeteo.data_structure.linked_station import LinkedStation
 
 
 class LinkedList(DataStructure):

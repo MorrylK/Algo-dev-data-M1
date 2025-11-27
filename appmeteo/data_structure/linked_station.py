@@ -1,4 +1,4 @@
-from appmeteo.MainObjects.Station import Station
+from appmeteo.main_objects.station import Station
 
 
 class LinkedStation(Station):

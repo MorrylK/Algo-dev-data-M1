@@ -1,4 +1,4 @@
-from appmeteo.DataExtractor.IDataExtractor import IDataExtractor
+from appmeteo.data_extractor.idata_extractor import IDataExtractor
 
 
 class IAPIDataExtractor(IDataExtractor):

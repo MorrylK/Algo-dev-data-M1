@@ -1,0 +1,22 @@
+class ConfigData:
+    @staticmethod
+    def get():
+        return {
+            "stations": [
+                {
+                    "capteur": "42",
+                    "name": "Compans Cafarelli",
+                    "api_label": "42-station-meteo-toulouse-parc-compans-cafarelli"
+                },
+                {
+                    "capteur": "31",
+                    "name": "Mons station épuration",
+                    "api_label": "31-station-meteo-mons-station-epuration"
+                },
+                {
+                    "capteur": "31",
+                    "name": "Colomiers ZI Enjacca",
+                    "api_label": "24-station-meteo-colomiers-zi-enjacca"
+                }
+            ]
+        }

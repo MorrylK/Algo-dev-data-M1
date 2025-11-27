@@ -1,4 +1,4 @@
-from appmeteo.MainObjects.Record import Record
+from appmeteo.main_objects.record import Record
 
 
 class RecordExtractor:

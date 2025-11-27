@@ -1,4 +1,4 @@
-from appmeteo.DataExtractor.APIDataExtractor import IAPIDataExtractor
+from appmeteo.data_extractor.api_data_extractor import IAPIDataExtractor
 import pandas as pd
 import requests
 

@@ -1,7 +1,7 @@
-from appmeteo.MainObjects.Record import Record
-from appmeteo.MainObjects.Station import Station
-from appmeteo.Printing.RecordPrinting import RecordPrinting
-from appmeteo.Printing.IPrinting import IPrinting
+from appmeteo.main_objects.record import Record
+from appmeteo.main_objects.station import Station
+from appmeteo.printing.record_printing import RecordPrinting
+from appmeteo.printing.iprinting import IPrinting
 import requests
 import pandas as pd
 
