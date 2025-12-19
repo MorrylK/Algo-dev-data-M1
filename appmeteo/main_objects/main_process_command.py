@@ -3,9 +3,8 @@ from appmeteo.data_extractor.api_stations import APIStations
 from appmeteo.main_objects.operate_with_linked_list import OperateWithLinkedList
 from appmeteo.main_objects.operate_with_queue import OperateWithQueue
 from appmeteo.printing.all_stations_printing import AllStationsPrinting
-from InquirerPy import inquirer
-
 from appmeteo.printing.batch_stations_printing import BatchStationsPrinting
+from InquirerPy import inquirer
 
 
 class Command():
