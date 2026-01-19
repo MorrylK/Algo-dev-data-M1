@@ -1,6 +1,8 @@
 # TP - APPLICATION MÉTÉO
 ### Par KOUEMO TIENTCHEU Yvan Morryl
 
+## CONFIG
+- Python `3.12`
 
 ## EXÉCUTION
 - Création d'un environnement virtuel: `python -m venv myEnv`

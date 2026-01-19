@@ -12,7 +12,7 @@ class ConfigData:
             ConfigData.__instance = super(ConfigData, cls).__new__(cls)
             ConfigData.__instance._config = {}
         return ConfigData.__instance
-    
+
     def __init__(self) -> None:
         self.stations = [
             {
@@ -31,7 +31,7 @@ class ConfigData:
                 "api_label": "24-station-meteo-colomiers-zi-enjacca"
             }
         ]
-    
+
     def get(self):
         return {
             "stations": self.stations

@@ -18,13 +18,13 @@ class LinkedList(DataStructure):
             self.queue = self.tete
         else:
             new_stat = LinkedStation(station["name"], station["capteur"], station["api_label"])
-            self.queue.next = new_stat
+            self.queue.nextStation = new_stat
             self.queue = new_stat
 
     def remove(self, data):
         maillon_prec = None
         maillon = self.tete
-        while maillon.data != data and maillon.next != None:
+        while maillon.data != data and maillon.nextStation != None:
             maillon_prec = maillon
             maillon = maillon.get_next()
         if maillon.data == data:
@@ -43,4 +43,4 @@ class LinkedList(DataStructure):
 
     def print(self, stations):
         for station in stations:
-            print(f"Data: {station.data} - Suivant: {station.next.data if station.next is not None else "-"}")
+            print(f"Data: {station.data} - Suivant: {station.nextStation.data if station.nextStation is not None else "-"}")

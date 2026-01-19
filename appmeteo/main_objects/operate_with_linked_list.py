@@ -19,4 +19,4 @@ class OperateWithLinkedList:
             input()
             print(station.nom.center(60, "-"))
             StationPrintingDecorator(station).print()
-            station = station.next
+            station = station.nextStation
