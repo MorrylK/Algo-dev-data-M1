@@ -1,3 +1,6 @@
+"""
+Config Data File
+"""
 class ConfigData:
     """
     Classe singleton pour la configuration des données.

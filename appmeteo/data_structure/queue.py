@@ -1,4 +1,6 @@
-
+"""
+Contient l'bjet Queue permettant de définir une file.
+"""
 from appmeteo.main_objects.station import Station
 
 
@@ -8,12 +10,11 @@ class Queue:
     """
     def __init__(self) -> None:
         self.queue:[Station] = []
-    
+
     def add(self, station):
         self.queue.append(Station(station["name"], station["capteur"], station["api_label"]))
-    
+
     def get(self):
         if len(self.queue) > 0:
             return self.queue.pop(0)
-        else:
-            return None
+        return None

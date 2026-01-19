@@ -1,3 +1,6 @@
+"""
+Linked Station
+"""
 from appmeteo.main_objects.station import Station
 
 

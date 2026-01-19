@@ -1,4 +1,10 @@
+"""
+Station
+"""
 class Station:
+    """
+    Objet Station racine
+    """
     def __init__(self, nom:str, capteur:int, api_label:str) -> None:
         self.nom:str = nom
         self.capteur:int = capteur

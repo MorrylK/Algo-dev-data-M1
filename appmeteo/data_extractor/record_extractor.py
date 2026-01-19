@@ -1,7 +1,13 @@
+"""
+Record Extractor
+"""
 from appmeteo.main_objects.record import Record
 
 
 class RecordExtractor:
+    """
+    Classe pour extraire les enregistrements des données
+    """
     @staticmethod
     def extract(data) -> Record:
         temperature = data.get("temperature")

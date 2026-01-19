@@ -1,10 +1,12 @@
-
+"""
+Main Process
+"""
+from InquirerPy import inquirer
 from appmeteo.data_extractor.api_stations import APIStations
 from appmeteo.main_objects.operate_with_linked_list import OperateWithLinkedList
 from appmeteo.main_objects.operate_with_queue import OperateWithQueue
 from appmeteo.printing.all_stations_printing import AllStationsPrinting
 from appmeteo.printing.batch_stations_printing import BatchStationsPrinting
-from InquirerPy import inquirer
 
 
 class Command():
@@ -71,20 +73,11 @@ class MainProcessCommand:
 
     def process(self) -> None:
         """
-        choice = None
-        while choice is None:
-            self.commands["title"].execute()
-            choice = self.commands["C0"].execute()
-            if choice not in ["1", "2", "3"]:
-                print("\n\tMauvaise entrée. Veuillez réessayer.")
-                choice = None
-        self.commands["C" + choice].execute()
+        Point d'entrée de l'application
         """
-
         self.commands["title"].execute()
         restart = True
         while restart:
             choice = self.commands["C0"].execute()
             self.commands["C" + choice].execute()
             restart = inquirer.confirm("Nouvelle opération ?", default=True).execute()
-

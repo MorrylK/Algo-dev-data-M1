@@ -1,10 +1,15 @@
+"""
+Batch stations printing
+"""
 from appmeteo.printing.iprinting import IPrinting
 from appmeteo.printing.station_printing import StationPrintingDecorator
-from appmeteo.main_objects.record import Record
 from appmeteo.main_objects.station import Station
 
 
 class BatchStationsPrinting(IPrinting):
+    """
+    Classe permettant l'affichage de plusieurs stations.
+    """
     @staticmethod
     def print(stations: list[Station]):
         for i in range(stations.shape[0]):

@@ -1,3 +1,6 @@
+"""
+Lanceur de l'application.
+"""
 from appmeteo.main_objects.main_process_command import MainProcessCommand
 
 

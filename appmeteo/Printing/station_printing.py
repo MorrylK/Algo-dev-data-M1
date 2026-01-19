@@ -1,9 +1,12 @@
+"""
+Station printing
+"""
+import requests
+import pandas as pd
 from appmeteo.main_objects.record import Record
 from appmeteo.main_objects.station import Station
 from appmeteo.printing.record_printing import RecordPrinting
 from appmeteo.printing.iprinting import IPrinting
-import requests
-import pandas as pd
 
 class StationPrintingDecorator(IPrinting):
     """
@@ -14,7 +17,7 @@ class StationPrintingDecorator(IPrinting):
 
     def print(self):
         url = f"https://data.toulouse-metropole.fr/api/explore/v2.1/catalog/datasets/{self.station.api_label}/records?select=data%2C%20id%2C%20humidite%2C%20pression%2C%20temperature_en_degre_c%2C%20heure_de_paris&order_by=-heure_utc&limit=1"
-        response = requests.get(url)
+        response = requests.get(url, timeout=60)
         data = response.json()
         if not data.get('results'):
             print("Aucun résultat trouvé pour cette station.")

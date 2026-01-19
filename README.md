@@ -10,3 +10,6 @@
 - Installation des librairies: `pip install -r requirements.txt`
 - Lancement de l'application: `python -m appmeteo`
 
+## LINTER
+- Test avec PyLint: `pylint appmeteo/`
+

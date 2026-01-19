@@ -1,3 +1,6 @@
+"""
+Test Batch
+"""
 from appmeteo.test.test import Test
 from appmeteo.test.test_missing import TestMissing
 
@@ -9,5 +12,4 @@ class TestBatch(Test):
             if not TestMissing.test(data.iloc[i]):
                 #print(f"Erreur ligne {i}")
                 return False
-            else:
-                return True
+            return True
