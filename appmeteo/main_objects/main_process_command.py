@@ -34,7 +34,7 @@ class QueueStationsPrintingCommand(Command):
         OperateWithQueue()
 
 
-class SelectStationCommand(Command):
+class SelectMenuCommand(Command):
     def execute(self) -> None:
         choice = inquirer.select(
             message="Menu de stations :",
@@ -64,7 +64,7 @@ class MainProcessCommand:
     def __init__(self) -> None:
         self.commands = {
             "title": TitlePrintingCommand(),
-            "C0": SelectStationCommand(),
+            "C0": SelectMenuCommand(),
             "C1": AllStationsPrintingCommand(),
             "C2": SelectSpecificStationCommand(),
             "C3": LinkedStationsPrintingCommand(),
