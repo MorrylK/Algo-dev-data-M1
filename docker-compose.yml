@@ -1,0 +1,11 @@
+version: '1.0'
+services:
+  appmeteo:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    stdin_open: true
+    tty: true
+    environment:
+      - PYTHONUNBUFFERED=1
+      - TERM=xterm-256color

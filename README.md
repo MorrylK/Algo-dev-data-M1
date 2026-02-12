@@ -12,6 +12,13 @@
 - Installation des librairies: `pip install -r requirements.txt`
 - Lancement de l'application: `python -m appmeteo`
 
+## EXÉCUTION AVEC DOCKER
+- Construire le conteneur : `docker-compose build`
+- Lancer avec docker compose : `docker-compose run --rm appmeteo`
+
 ## LINTER
 - Test avec PyLint: `pylint appmeteo/`
 
+## TESTS UNITAIRES
+- Lancer les tests: `python -m pytest tests`
+- Obtenir le test coverage: `python -m pytest --cov=appmeteo`
