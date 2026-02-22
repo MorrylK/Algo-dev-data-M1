@@ -6,6 +6,9 @@ from appmeteo.data_structure.linked_station import LinkedStation
 
 
 class LinkedList(DataStructure):
+    """
+    Linked List
+    """
     def __init__(self, stations) -> None:
         self.tete:LinkedStation = None
         self.queue:LinkedStation = None
@@ -13,34 +16,13 @@ class LinkedList(DataStructure):
             self.add(station)
 
     def add(self, station:LinkedStation):
+        """
+        Adds a linked station to the linked list
+        """
         if self.tete is None:
             self.tete = LinkedStation(station["name"], station["capteur"], station["api_label"])
             self.queue = self.tete
         else:
             new_stat = LinkedStation(station["name"], station["capteur"], station["api_label"])
-            self.queue.nextStation = new_stat
+            self.queue.next_station = new_stat
             self.queue = new_stat
-
-    def remove(self, data):
-        maillon_prec = None
-        maillon = self.tete
-        while maillon.data != data and maillon.nextStation != None:
-            maillon_prec = maillon
-            maillon = maillon.get_next()
-        if maillon.data == data:
-            maillon_prec.set_next(maillon.get_next())
-        else:
-            print("Élément à supprimer non trouvé.")
-
-    def search(self, data):
-        maillon = self.tete
-        while maillon.data != data:
-            maillon = maillon.get_next()
-        if maillon.data == data:
-            return maillon
-        print("Élément non trouvé.")
-        return None
-
-    def print(self, stations):
-        for station in stations:
-            print(f"Data: {station.data} - Suivant: {station.nextStation.data if station.nextStation is not None else "-"}")

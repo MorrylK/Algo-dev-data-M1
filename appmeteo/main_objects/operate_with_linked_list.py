@@ -17,6 +17,5 @@ class OperateWithLinkedList:
         while station is not None:
             print("\n[Appuyez sur Entrée pour continuer]\n")
             input()
-            print(station.nom.center(60, "-"))
             StationPrintingDecorator(station).print()
-            station = station.nextStation
+            station = station.next_station

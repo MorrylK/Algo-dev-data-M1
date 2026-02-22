@@ -11,4 +11,5 @@ class RecordPrinting(IPrinting):
     """
     @staticmethod
     def print(record: Record):
-        print(f"{record.heure}\nTempérature : {record.temperature} ; Humidité : {record.humidite} ; Pression : {record.pression}")
+        print(f"{record.heure}\nTempérature : {record.temperature} ; "\
+            f"Humidité : {record.humidite} ; Pression : {record.pression}")

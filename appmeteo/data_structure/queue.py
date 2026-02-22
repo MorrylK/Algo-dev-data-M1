@@ -8,8 +8,12 @@ class Queue:
     """
     Classe définissant une file de stations.
     """
-    def __init__(self) -> None:
+    def __init__(self, stations:[Station]=None) -> None:
         self.queue:[Station] = []
+        if stations is None:
+            return
+        for station in stations:
+            self.add(station)
 
     def add(self, station):
         self.queue.append(Station(station["name"], station["capteur"], station["api_label"]))

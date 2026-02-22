@@ -8,4 +8,7 @@ class IDataExtractor:
     """
     @staticmethod
     def extract() -> dict:
+        """
+        Méthode d'extraction des données
+        """
         raise NotImplementedError("This function must be implemented.")
